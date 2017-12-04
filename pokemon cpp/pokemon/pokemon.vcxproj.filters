@@ -21,6 +21,15 @@
     <ClCompile Include="source\pokemon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\types.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\abilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\colors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\abilities.h">
@@ -42,9 +51,6 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="source\colors.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\type.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

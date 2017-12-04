@@ -5,7 +5,7 @@
 #include "colors.h"
 
 #include <string>
-#include <list>
+#include <vector>
 
 namespace pokemon
 {
@@ -15,7 +15,7 @@ namespace pokemon
 
     public:
         // constructor (everything)
-        pokemon(std::string name, unsigned int pokedexNumber, std::string pokedexClassification, stats baseStats, std::list<TYPE> types, std::list<ABILITY> abilities, float height, float weight, COLOR pokedexColor);
+        pokemon(std::string name, unsigned int pokedexNumber, std::string pokedexClassification, stats baseStats, std::vector<TYPE> types, std::vector<ABILITY> abilities, float height, float weight, COLOR pokedexColor);
 
         // getters
 #pragma region getters
@@ -24,8 +24,8 @@ namespace pokemon
         unsigned int getPokedexNumber();
         std::string getPokedexClassification();
         stats getBaseStats();
-        std::list<TYPE> getTypes();
-        std::list<ABILITY> getAbilities();
+        std::vector<TYPE> getTypes();
+        std::vector<ABILITY> getAbilities();
         float getHeight();
         float getWeight();
         COLOR getPokedexColor();
@@ -39,8 +39,8 @@ namespace pokemon
         void setPokedexNumber(unsigned int pokedexNumber);
         void setpokedexClassification(std::string& pokedexClassification);
         void setBaseStats(stats baseStats);
-        void setTypes(std::list<TYPE> types);
-        void setAbilities(std::list<ABILITY> abilities);
+        void setTypes(std::vector<TYPE> types);
+        void setAbilities(std::vector<ABILITY> abilities);
         void setHeight(float height);
         void setWeight(float weight);
         void setPokedexColor(COLOR pokedexColor);
@@ -69,10 +69,10 @@ namespace pokemon
         stats m_baseStats;
 
         // type(s)
-        std::list<TYPE> m_types;
+        std::vector<TYPE> m_types;
 
         // ability(s)
-        std::list<ABILITY> m_abilities;
+        std::vector<ABILITY> m_abilities;
 
         // height / weight
         float m_height;

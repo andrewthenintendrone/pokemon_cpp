@@ -1,7 +1,10 @@
 #pragma once
+#include <vector>
 
 namespace pokemon
 {
+	extern std::vector<std::string> colorStrings;
+
     enum COLOR
     {
         RED,
@@ -15,4 +18,6 @@ namespace pokemon
         WHITE,
         PINK
     };
+
+	extern std::string nameOfColor(COLOR color);
 }

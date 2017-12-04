@@ -1,7 +1,10 @@
 #pragma once
+#include <vector>
 
 namespace pokemon
 {
+	extern std::vector<std::string> abilityStrings;
+
     // pokemon abilities
     enum ABILITY
     {
@@ -239,4 +242,6 @@ namespace pokemon
         PRISMARMOR,
         NEUROFORCE
     };
+
+	extern std::string nameOfAbility(ABILITY ability);
 }

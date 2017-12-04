@@ -152,8 +152,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="source\abilities.cpp" />
+    <ClCompile Include="source\colors.cpp" />
     <ClCompile Include="source\main.cpp" />
     <ClCompile Include="source\pokemon.cpp" />
+    <ClCompile Include="source\types.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\abilities.h" />
@@ -162,7 +165,6 @@
     <ClInclude Include="source\experienceGroups.h" />
     <ClInclude Include="source\colors.h" />
     <ClInclude Include="source\pokemon.h" />
-    <ClInclude Include="source\type.h" />
     <ClInclude Include="source\types.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

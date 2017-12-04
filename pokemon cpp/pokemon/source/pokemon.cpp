@@ -2,7 +2,7 @@
 
 namespace pokemon
 {
-    pokemon::pokemon(std::string name, unsigned int pokedexNumber, std::string pokedexClassification, stats baseStats, std::list<TYPE> types, std::list<ABILITY> abilities, float height, float weight, COLOR pokedexColor)
+    pokemon::pokemon(std::string name, unsigned int pokedexNumber, std::string pokedexClassification, stats baseStats, std::vector<TYPE> types, std::vector<ABILITY> abilities, float height, float weight, COLOR pokedexColor)
     {
         m_name = name;
         m_pokedexNumber = pokedexNumber;
@@ -37,12 +37,12 @@ namespace pokemon
         return m_baseStats;
     }
 
-    std::list<TYPE> pokemon::getTypes()
+    std::vector<TYPE> pokemon::getTypes()
     {
         return m_types;
     }
 
-    std::list<ABILITY> pokemon::getAbilities()
+    std::vector<ABILITY> pokemon::getAbilities()
     {
         return m_abilities;
     }
@@ -86,12 +86,12 @@ namespace pokemon
         m_baseStats = baseStats;
     }
 
-    void pokemon::setTypes(std::list<TYPE> types)
+    void pokemon::setTypes(std::vector<TYPE> types)
     {
         m_types = types;
     }
 
-    void pokemon::setAbilities(std::list<ABILITY> abilities)
+    void pokemon::setAbilities(std::vector<ABILITY> abilities)
     {
         m_abilities = abilities;
     }
@@ -119,14 +119,51 @@ namespace pokemon
 
         info.append("Name: " + m_name + "\n");
         info.append("Pokedex Number: " + std::to_string(m_pokedexNumber) + "\n");
-        info.append("Pokedex Classification: " + m_pokedexClassification + " POKEMON\n");
-        info.append("Base Stats:\n\n");
+        info.append("Pokedex Classification: " + m_pokedexClassification + " POKEMON\n\n");
+
+        info.append("Base Stats:\n");
         info.append("HP: " + std::to_string(m_baseStats.getHP()) + "\n");
         info.append("ATTACK: " + std::to_string(m_baseStats.getATTACK()) + "\n");
         info.append("DEFENSE: " + std::to_string(m_baseStats.getDEFENSE()) + "\n");
         info.append("SPECIAL ATTACK: " + std::to_string(m_baseStats.getSPECIALATTACK()) + "\n");
         info.append("SPECIAL DEFENSE: " + std::to_string(m_baseStats.getSPECIALDEFENSE()) + "\n");
-        info.append("SPEED: " + std::to_string(m_baseStats.getSPEED()) + "\n");
+        info.append("SPEED: " + std::to_string(m_baseStats.getSPEED()) + "\n\n");
+
+		info.append(m_types.size() > 1 ? "Types: " : "Type: ");
+		for (int i = 0; i < m_types.size(); i++)
+		{
+			info.append(nameOfType(m_types[i]));
+
+			if (i < m_types.size() - 1)
+			{
+				info.append(" / ");
+			}
+			else
+			{
+				info.append("\n");
+			}
+		}
+
+		info.append(m_abilities.size() > 1 ? "Abilities: " : "Ability: ");
+		for (int i = 0; i < m_abilities.size(); i++)
+		{
+			info.append(nameOfAbility(m_abilities[i]));
+			if (i < m_abilities.size() - 1)
+			{
+				info.append(" / ");
+			}
+			else
+			{
+				info.append("\n");
+			}
+		}
+
+		info.append("Height: " + std::to_string(m_height) + "\n");
+		info.append("Weight: " + std::to_string(m_weight) + "\n");
+
+		info.append("Color: " + nameOfColor(m_pokedexColor) + "\n\n");
+
+		return info;
     }
 
 }
