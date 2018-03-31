@@ -1,4 +1,5 @@
 #include "types.h"
+<<<<<<< HEAD
 #include <vector>
 
 namespace pkm
@@ -164,3 +165,37 @@ namespace pkm
 
     std::vector<TypeMatchup*> typeMatchups = { &normalType, &fireType, &waterType, &electricType, &grassType, &iceType, &fightingType, &poisonType, &groundType, &flyingType, &psychicType, &bugType, &rockType, &darkType, &dragonType, &darkType, &steelType, &fairyType };
 }
+=======
+
+namespace pokemon
+{
+	std::vector<std::string> typeStrings =
+	{
+		"Normal",
+		"Fighting",
+		"Flying",
+		"Poison",
+		"Ground",
+		"Rock",
+		"Bug",
+		"Ghost",
+		"Steel",
+		"Fire",
+		"Water",
+		"Grass",
+		"Electric",
+		"Psychic",
+		"Ice",
+		"Dragon",
+		"Dark",
+		"Fairy",
+		"None",
+		"Curse Type"
+	};
+
+	std::string nameOfType(TYPE type)
+	{
+		return typeStrings[int(type)];
+	}
+}
+>>>>>>> 4b849ed73c231e2f3b9ef5aa497d03e00ce58f9f

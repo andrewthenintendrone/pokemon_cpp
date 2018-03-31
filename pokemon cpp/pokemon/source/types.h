@@ -1,9 +1,13 @@
 #pragma once
 #include <vector>
+<<<<<<< HEAD
 #include <string>
+=======
+>>>>>>> 4b849ed73c231e2f3b9ef5aa497d03e00ce58f9f
 
 namespace pkm
 {
+<<<<<<< HEAD
     // enums
     enum TYPEENUM
     {
@@ -45,4 +49,33 @@ namespace pkm
     };
 
     std::string typeToString(TYPEENUM type);
+=======
+	extern std::vector<std::string> typeStrings;
+
+	enum TYPE
+	{
+		NORMAL,
+		FIGHTING,
+		FLYING,
+		POISON,
+		GROUND,
+		ROCK,
+		BUG,
+		GHOST,
+		STEEL,
+		FIRE,
+		WATER,
+		GRASS,
+		ELECTRIC,
+		PSYCHIC,
+		ICE,
+		DRAGON,
+		DARK,
+		FAIRY,
+		NONE,
+		CURSETYPE
+	};
+
+	extern std::string nameOfType(TYPE type);
+>>>>>>> 4b849ed73c231e2f3b9ef5aa497d03e00ce58f9f
 }

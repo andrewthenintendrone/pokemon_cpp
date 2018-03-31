@@ -1,8 +1,14 @@
 #pragma once
+<<<<<<< HEAD
 #include <string>
+=======
+#include <vector>
+>>>>>>> 4b849ed73c231e2f3b9ef5aa497d03e00ce58f9f
 
 namespace pkm
 {
+	extern std::vector<std::string> abilityStrings;
+
     // pokemon abilities
     enum ABILITY
     {
@@ -241,5 +247,9 @@ namespace pkm
         NEUROFORCE
     };
 
+<<<<<<< HEAD
     std::string abilityToString(ABILITY ability);
+=======
+	extern std::string nameOfAbility(ABILITY ability);
+>>>>>>> 4b849ed73c231e2f3b9ef5aa497d03e00ce58f9f
 }
