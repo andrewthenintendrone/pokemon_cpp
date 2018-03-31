@@ -1,6 +1,7 @@
 #pragma once
+#include <string>
 
-namespace pokemon
+namespace pkm
 {
     enum COLOR
     {
@@ -15,4 +16,6 @@ namespace pokemon
         WHITE,
         PINK
     };
+
+    std::string colorToString(COLOR color);
 }

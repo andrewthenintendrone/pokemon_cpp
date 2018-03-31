@@ -1,6 +1,7 @@
 #pragma once
+#include <string>
 
-namespace pokemon
+namespace pkm
 {
     enum EXPERIENCEGROUP
     {
@@ -11,4 +12,8 @@ namespace pokemon
         SLOW,
         FLUCTUATING
     };
+
+    std::string experienceGroupToString(EXPERIENCEGROUP experienceGroup);
+
+    unsigned int calculateExperienceForLevel(EXPERIENCEGROUP experienceGroup, unsigned int level);
 }

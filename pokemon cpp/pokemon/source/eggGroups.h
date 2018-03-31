@@ -1,24 +1,27 @@
 #pragma once
+#include <string>
 
-namespace pokemon
+namespace pkm
 {
     // pokemon egg groups
     enum EGGGROUP
     {
-        MONSTER,
-        WATER1,
-        BUG,
-        FLYING,
-        FIELD,
-        FAIRY,
-        GRASS,
-        HUMANLIKE,
-        WATER3,
-        MINERAL,
-        AMORPHOUS,
-        WATER2,
-        DITTO,
-        DRAGON,
-        UNDISCOVERED
+        EGGROUP_MONSTER,
+        EGGROUP_WATER1,
+        EGGROUP_BUG,
+        EGGROUP_FLYING,
+        EGGROUP_FIELD,
+        EGGROUP_FAIRY,
+        EGGROUP_GRASS,
+        EGGROUP_HUMANLIKE,
+        EGGROUP_WATER3,
+        EGGROUP_MINERAL,
+        EGGROUP_AMORPHOUS,
+        EGGROUP_WATER2,
+        EGGROUP_DITTO,
+        EGGROUP_DRAGON,
+        EGGROUP_UNDISCOVERED
     };
+
+    std::string eggGroupToString(EGGGROUP eggGroup);
 }

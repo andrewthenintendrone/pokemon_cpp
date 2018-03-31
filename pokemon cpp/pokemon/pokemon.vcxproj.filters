@@ -21,6 +21,27 @@
     <ClCompile Include="source\pokemon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\types.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\abilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\colors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\eggGroups.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\experienceGroups.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\abilities.h">
@@ -44,7 +65,10 @@
     <ClInclude Include="source\colors.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="source\type.h">
+    <ClInclude Include="source\file.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\catchRates.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

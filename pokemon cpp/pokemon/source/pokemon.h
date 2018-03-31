@@ -3,32 +3,33 @@
 #include "abilities.h"
 #include "stats.h"
 #include "colors.h"
+#include "eggGroups.h"
+#include "experienceGroups.h"
 
-#include <string>
-#include <list>
-
-namespace pokemon
+namespace pkm
 {
     // pokemon class
-    class pokemon
+    class Pokemon
     {
 
     public:
         // constructor (everything)
-        pokemon(std::string name, unsigned int pokedexNumber, std::string pokedexClassification, stats baseStats, std::list<TYPE> types, std::list<ABILITY> abilities, float height, float weight, COLOR pokedexColor);
+        Pokemon(char* name, unsigned int pokedexNumber, char* speciesName, Stats baseStats, std::vector<TYPEENUM> types, std::vector<ABILITY> abilities, float height, float weight, COLOR color, std::vector<EGGGROUP> eggGroups, EXPERIENCEGROUP experienceGroup);
 
         // getters
 #pragma region getters
 
-        std::string getName();
-        unsigned int getPokedexNumber();
-        std::string getPokedexClassification();
-        stats getBaseStats();
-        std::list<TYPE> getTypes();
-        std::list<ABILITY> getAbilities();
-        float getHeight();
-        float getWeight();
-        COLOR getPokedexColor();
+        std::string getName() const;
+        unsigned int getPokedexNumber() const;
+        std::string getSpeciesName() const;
+        Stats getBaseStats() const;
+        std::vector<TYPEENUM> getTypes() const;
+        std::vector<ABILITY> getAbilities() const;
+        float getHeight() const;
+        float getWeight() const;
+        COLOR getColor() const;
+        std::vector<EGGGROUP> getEggGroups() const;
+        EXPERIENCEGROUP getExperienceGroup() const;
 
 #pragma endregion
 
@@ -37,49 +38,39 @@ namespace pokemon
 
         void setName(std::string& name);
         void setPokedexNumber(unsigned int pokedexNumber);
-        void setpokedexClassification(std::string& pokedexClassification);
-        void setBaseStats(stats baseStats);
-        void setTypes(std::list<TYPE> types);
-        void setAbilities(std::list<ABILITY> abilities);
+        void setSpeciesName(std::string& speciesName);
+        void setBaseStats(Stats baseStats);
+        void setTypes(std::vector<TYPEENUM> types);
+        void setAbilities(std::vector<ABILITY> abilities);
         void setHeight(float height);
         void setWeight(float weight);
-        void setPokedexColor(COLOR pokedexColor);
+        void setColor(COLOR color);
+        void setEggGroups(std::vector<EGGGROUP> eggGroups);
+        void setExperienceGroup(EXPERIENCEGROUP experienceGroup);
 
 #pragma endregion
 
         // functions
 
         // consolidates pokemon info into a string and returns it
-        std::string getInfo();
+        std::string getInfo() const;
 
     private:
 
 #pragma region variables
 
-        // english name of the pokemon
         std::string m_name;
-
-        // number in pokedex
         unsigned int m_pokedexNumber;
-
-        // pokedex classification
-        std::string m_pokedexClassification;
-
-        // base stats
-        stats m_baseStats;
-
-        // type(s)
-        std::list<TYPE> m_types;
-
-        // ability(s)
-        std::list<ABILITY> m_abilities;
-
-        // height / weight
+        std::string m_speciesName;
+        Stats m_baseStats;
+        std::vector<TYPEENUM> m_types;
+        std::vector<ABILITY> m_abilities;
         float m_height;
         float m_weight;
-
-        // pokedex color
-        COLOR m_pokedexColor;
+        COLOR m_color;
+        std::vector<EGGGROUP> m_eggGroups;
+        EXPERIENCEGROUP m_experienceGroup;
+        unsigned char m_catchRate;
 
 #pragma endregion
 

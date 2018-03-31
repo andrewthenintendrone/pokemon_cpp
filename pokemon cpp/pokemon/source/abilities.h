@@ -1,6 +1,7 @@
 #pragma once
+#include <string>
 
-namespace pokemon
+namespace pkm
 {
     // pokemon abilities
     enum ABILITY
@@ -239,4 +240,6 @@ namespace pokemon
         PRISMARMOR,
         NEUROFORCE
     };
+
+    std::string abilityToString(ABILITY ability);
 }
