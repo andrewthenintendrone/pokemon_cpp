@@ -154,17 +154,12 @@
   <ItemGroup>
     <ClCompile Include="source\abilities.cpp" />
     <ClCompile Include="source\colors.cpp" />
-<<<<<<< HEAD
     <ClCompile Include="source\eggGroups.cpp" />
     <ClCompile Include="source\experienceGroups.cpp" />
     <ClCompile Include="source\file.cpp" />
     <ClCompile Include="source\main.cpp" />
     <ClCompile Include="source\pokemon.cpp" />
     <ClCompile Include="source\stats.cpp" />
-=======
-    <ClCompile Include="source\main.cpp" />
-    <ClCompile Include="source\pokemon.cpp" />
->>>>>>> 4b849ed73c231e2f3b9ef5aa497d03e00ce58f9f
     <ClCompile Include="source\types.cpp" />
   </ItemGroup>
   <ItemGroup>

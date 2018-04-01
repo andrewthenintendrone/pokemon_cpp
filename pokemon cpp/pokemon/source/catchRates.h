@@ -12,6 +12,6 @@ namespace pkm
 
     float calculateCatchRate(CatchRate catchRate)
     {
-
+		return 0.0f;
     }
 }

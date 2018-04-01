@@ -24,30 +24,24 @@
     <ClCompile Include="source\types.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-<<<<<<< HEAD
     <ClCompile Include="source\file.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="source\stats.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-=======
->>>>>>> 4b849ed73c231e2f3b9ef5aa497d03e00ce58f9f
     <ClCompile Include="source\abilities.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="source\colors.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-<<<<<<< HEAD
     <ClCompile Include="source\eggGroups.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="source\experienceGroups.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-=======
->>>>>>> 4b849ed73c231e2f3b9ef5aa497d03e00ce58f9f
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\abilities.h">
@@ -71,14 +65,11 @@
     <ClInclude Include="source\colors.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-<<<<<<< HEAD
     <ClInclude Include="source\file.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="source\catchRates.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-=======
->>>>>>> 4b849ed73c231e2f3b9ef5aa497d03e00ce58f9f
   </ItemGroup>
 </Project>
